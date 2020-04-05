@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# DB file
+*.sqlite3
+
+# pyc files
+*.pyc
