@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Python study website!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='icon' type='image/png' href="{% static 'img/octahedron.png' %}" />
   <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,27 +15,25 @@
 
 <body id="top">
 <!--Header & Pageintro-->
-<div>
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear">
-      <div id="logo" class="fl_left">
-        <h1><a href="{% url 'index' %}">Python Study</a></h1>
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li><a href="#">Home</a></li>
-          <li><a class="drop" href="#">Python classes</a>
-            <ul>
-              <li><a href="{% url 'random' %}">Data Science</a></li>
-              <li><a href="{% url 'many' %}">Machine Learning</a> </li>
-            </ul>
-          </li>
-          <li><a href="https://github.com/Espade/quotepush">Repo</a></li>
-          <li><a href="https://github.com/Espade">Developer</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+<div class="row1">
+  <header id="header" class="clear">
+    <div id="logo" class="fl_left">
+      <h1><a href="{% url 'index' %}">Python Study</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li><a href="#">Home</a></li>
+        <li><a class="drop" href="#">Python classes</a>
+          <ul>
+            <li><a href="{% url 'random' %}">Data Science</a></li>
+            <li><a href="{% url 'many' %}">Machine Learning</a> </li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/Espade/quotepush">Repo</a></li>
+        <li><a href="https://github.com/Espade">Developer</a></li>
+      </ul>
+    </nav>
+  </header>
 <!--  <div id="pageintro" class="hoc clear">-->
 <!--    <article>-->
 <!--      <h3 class="heading">In Progress</h3>-->
@@ -55,16 +54,16 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static 'img/slider_1.jpg' %}" class="d-block w-100" alt="First Slide">
+        <img src="{% static 'img/slider_1.jpg' %}" class="d-block" alt="First Slide">
       </div>
       <div class="carousel-item">
-        <img src="{% static 'img/slider_2.jpg' %}" class="d-block w-100" alt="Second Slide">
+        <img src="{% static 'img/slider_2.jpg' %}" class="d-block" alt="Second Slide">
       </div>
       <div class="carousel-item">
-        <img src="{% static 'img/slider_3.jpg' %}" class="d-block w-100" alt="Third Slide">
+        <img src="{% static 'img/slider_3.jpg' %}" class="d-block" alt="Third Slide">
       </div>
       <div class="carousel-item">
-        <img src="{% static 'img/slider_4.jpg' %}" class="d-block w-100" alt="Fourth Slide">
+        <img src="{% static 'img/slider_4.jpg' %}" class="d-block" alt="Fourth Slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
@@ -122,7 +121,59 @@
       </article>
     </li>
   </ul>
-
-  <div class="clear"></div>
 </div>
+
+<div class="row4">
+  <footer id="footer" class="hoc clear">
+    <div class="one_fifth first">
+      <h6 class="heading">Codeweal</h6>
+      <img src="{% static 'img/octahedron.png' %}" alt="Logo">
+    </div>
+    <div class="one_fifth">
+      <h6 class="heading">Codeweal</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">For Business</a></li>
+      </ul>
+    </div>
+    <div class="one_fifth">
+      <h6 class="heading">Resources</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Cooperation</a></li>
+      </ul>
+    </div>
+    <div class="one_fifth">
+      <h6 class="heading">Company</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+    <div class="one_fifth">
+      <h6 class="heading">Community</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <strong class="fl_left">@ 2020 Codeweal</strong>
+    <strong class="fl_right">Made by Shuaijun Gao</strong>
+  </div>
+</div>
+
 </body>
