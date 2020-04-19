@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'quoteshitter.urls'
+ROOT_URLCONF = 'codeweal.urls'
 
 TEMPLATES = [
     {
@@ -59,7 +59,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'quoteshitter.wsgi.application'
+WSGI_APPLICATION = 'codeweal.wsgi.application'
 
 
 # Database
